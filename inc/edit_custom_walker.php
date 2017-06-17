@@ -197,6 +197,7 @@ class Walker_Nav_Menu_Edit_Custom extends Walker_Nav_Menu  {
 					</label>
 				</p>
 				
+				<template>
 				<?php if (class_exists('acf')) : 
 				
 					if ( function_exists('acf_get_field_groups') ) :
@@ -276,6 +277,7 @@ class Walker_Nav_Menu_Edit_Custom extends Walker_Nav_Menu  {
 					endif;
 					
 				endif; ?>
+				</template>
 
 				<fieldset class="field-move hide-if-no-js description description-wide">
 					<span class="field-move-visual-label" aria-hidden="true"><?php _e( 'Move' ); ?></span>
